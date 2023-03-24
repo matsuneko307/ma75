@@ -125,8 +125,8 @@ def imghash(img, predict):
     dic = sorted(dic.items(), key=lambda x:x[1])
 
     for i in range(15):
-        code_list.append(dic[i][0].split("\\")[1].split("_")[0])
-        date_list.append(dic[i][0].split("\\")[1].split("_")[1])
+        code_list.append(dic[i][0].split("/")[1].split("_")[0])
+        date_list.append(dic[i][0].split("/")[1].split("_")[1])
         diff_list.append(dic[i][1])
 
     return dic, code_list, date_list, diff_list
