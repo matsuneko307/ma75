@@ -28,6 +28,11 @@ code = st.sidebar.text_input('証券コード')
 if st.sidebar.button('分析開始') and code:
     df = func.get_stock(code)
     
+    today = datetime.date.today()
+    start = today - datetime.timedelta(days=365)
+    df = yf.download(f"{code}.T", start=start, end=today)
+    st.table(df)
+    
     if func.under_75(df):
         img = func.get_graph(df)
 
