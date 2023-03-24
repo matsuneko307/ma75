@@ -1,5 +1,3 @@
-datetime
-glob
 pandas
 yfinance
 mplfinance
