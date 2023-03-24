@@ -1,10 +1,9 @@
 pandas
 yfinance
 mplfinance
-PIL
+Pillow
 torchvision
 numpy
 torch
 imagehash
 streamlit
-
